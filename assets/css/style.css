@@ -1,0 +1,113 @@
+html,
+body {
+    margin: 0px;
+}
+
+iframe {
+    display: block;
+    /* iframes are inline by default */
+    background: transparent !important;
+    border: 1px solid !important;
+    /* Reset default border */
+    height: 100vh;
+    /* Viewport-relative units */
+    width: 100vw;
+}
+
+.mainContent {
+    overflow-x: hidden;
+}
+
+/* #shell {
+    border: 1px solid !important;
+} */
+
+.container {
+    /* background-image: url('../images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* color: white; */
+    /* border: 1px solid; */
+}
+
+.loader {
+    position: absolute;
+    margin: 0;
+    top: 40%;
+    left: 45%;
+    z-index: 1;
+}
+
+.loadBar {
+    /* position: relative;
+    left: 22px; */
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
+    .loader {
+        top: 40%;
+        left: 40%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .loader {
+        top: 40%;
+        left: 40%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .loader {
+        top: 40%;
+        left: 45%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 700px !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cfcece;
+    border-radius: 10px;
+}

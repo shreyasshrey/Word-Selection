@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Word Selection</title>
+</head>
+
+<body>
+
+    <div class="loader" id="loader">
+        <div class="loadBar"></div>
+        <!-- <img src="assets/images/loader1.gif" alt="loader" class="img-fluid"> -->
+        <p class="loadTitle"></p>
+    </div>
+
+    <!-- (shadow-lg p-4 bg-body rounded)  = code for box shadow -->
+
+    <section class="main container height-100vh py-1" id="iframe-area">
+        <iframe class="border-0 center-align-verticaly w-100" allowtransparency="true" src="" id="shell"
+            frameborder="0"></iframe>
+    </section>
+
+    <!-- <div class="container py-5">
+        <div class="mainSection container-fluid mt-2">
+            <div class="row text-center">
+                <div class="col">
+                    <h4>Category:</h4>
+                    <h1>FOOD</h1>
+                    <h3 class="questCol" id="questCol"></h3>
+                </div>
+            </div>
+
+            ----------------------- Life, Time and Score Section -----------------------
+
+            <div class="row text-center mb-3">
+                <div class="col-sm-4 lifearea">
+                    <h2>Attempts</h2>
+                    <h4 class="lives" id="lives"></h4>
+                </div>
+                <div class="col-sm-4 timearea">
+                    <h2>Time</h2>
+                    <h4 class="timer" id="timer"></h4>
+                </div>
+                <div class="col-sm-4 scorearea">
+                    <h2>Score</h2>
+                    <h4 class="score" id="score"></h4>
+                </div>
+            </div>
+
+            ---------------------------- question row ----------------------------
+
+            <div class="row text-center ques-text mb-3">
+                <div class="col-sm-12 question">
+                </div>
+            </div>
+
+            ---------------------------- answer row ----------------------------
+
+            <div class="row text-center answer-part mb-3">
+                <p>Choose the Correct Answer</p>
+                <div class="col-sm-12 correct">
+                </div>
+            </div>
+
+            ---------------------------- options row ----------------------------
+
+            <div class="row text-center opt-part">
+                <div class="col-sm-12 keyboard mt-3">
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+    <!-- ---------------------------- Modal for Next Question ---------------------------- -->
+
+    <div class="modal nxtQuesModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Good Job</h5>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn btn-success" type="button" id="next">Next</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------- Modal for Timeout and Game Over ---------------------------- -->
+
+    <div class="modal feedbackModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="feedbacktext"></h5>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>Modal body text goes here.</p> -->
+                    <!-- <div class="modalQues"></div> -->
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="assets/scripts/jqueryscripts/jquery-3.5.1.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

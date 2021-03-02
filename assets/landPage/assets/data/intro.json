@@ -1,0 +1,13 @@
+{
+    "content": {
+        "title": "Select the Category",
+        "list": [
+            {
+                "category1": "General Knowledge"
+            },
+            {
+                "category2": "Sports"
+            }
+        ]
+    }
+}

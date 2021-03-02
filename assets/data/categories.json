@@ -1,0 +1,15 @@
+{
+    "content": {
+        "list": [{
+            "category1":{
+                "name":"General Knowledge"
+            },
+            "category2":{
+                "name":"Sports"
+            },
+            "category3":{
+                "name":"Animals"
+            }
+        }]
+    }
+}

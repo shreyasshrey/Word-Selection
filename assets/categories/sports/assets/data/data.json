@@ -1,0 +1,59 @@
+{
+    "contents": {
+        "title":"Category",
+        "name":"Sports",
+        "questionsList": [{
+                "question1":{
+                    "question": "Which is our national Sport?",
+                    "answer": ["H","O","C","K","E","Y"],
+                    "duration": 30
+                },
+                "question2":{
+                    "question": "Who won the first T20 World Cup?",
+                    "answer": ["I","N","D","I","A"],
+                    "duration": 30
+                },
+                "question3":{
+                    "question": "Which country has won the Cricket World Cup three times in a row?",
+                    "answer": ["A","U","S","T","R","A","L","I","A"],
+                    "duration": 30
+                },
+                "question4":{
+                    "question": "How many times has India won the ICC World Cup?",
+                    "answer": ["T","W","O"],
+                    "duration": 30
+                },
+                "question5":{
+                    "question": "Who is known as the Flying Sikh of India?",
+                    "answer": ["M","I","L","K","A","S","I","N","G","H"],
+                    "duration": 30
+                },
+                "question6":{
+                    "question": "How many times has India won the Hockey World Cup (Men’s)?",
+                    "answer": ["O","N","E"],
+                    "duration": 30
+                },
+                "question7":{
+                    "question": "Name the woman boxer who won the medal in world championships",
+                    "answer": ["M","A","R","Y","K","O","M"],
+                    "duration": 30
+                },
+                "question8":{
+                    "question": "Name the woman who is the first Indian to win a medal in Badminton at the Olympics",
+                    "answer": ["S","A","I","N","A","N","E","H","W","A","L"],
+                    "duration": 30
+                },
+                "question9":{
+                    "question": "who is known as the God of Cricket",
+                    "answer": ["S","A","C","H","I","N"],
+                    "duration": 30
+                },
+                "question10":{
+                    "question": "In which country commonwealth games were held in 2010?",
+                    "answer": ["I","N","D","I","A"],
+                    "duration": 30
+                }
+            }
+        ]
+    }
+}

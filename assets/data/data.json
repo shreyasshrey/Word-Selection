@@ -1,0 +1,57 @@
+{
+    "contents": {
+        "questionsList": [{
+                "question1":{
+                    "question": "Which is our country?",
+                    "answer": ["I","N","D","I","A"],
+                    "duration": 30
+                },
+                "question2":{
+                    "question": "How many days do we have in a week?",
+                    "answer": ["S","E","V","E","N"],
+                    "duration": 30
+                },
+                "question3":{
+                    "question": "Which is the capital city of karnataka?",
+                    "answer": ["B","A","N","G","A","L","O","R","E"],
+                    "duration": 30
+                },
+                "question4":{
+                    "question": "Which animal is known as the ‘Ship of the Desert?’",
+                    "answer": ["C","A","M","E","L"],
+                    "duration": 30
+                },
+                "question5":{
+                    "question": "Which is the largest continent?",
+                    "answer": ["A","S","I","A"],
+                    "duration": 30
+                },
+                "question6":{
+                    "question": "In which direction does the sun rise?",
+                    "answer": ["E","A","S","T"],
+                    "duration": 30
+                },
+                "question7":{
+                    "question": "What do you call a type of shape that has five sides?",
+                    "answer": ["P","E","N","T","A","G","O","N"],
+                    "duration": 30
+                },
+                "question8":{
+                    "question": "Which is the largest mammal?",
+                    "answer": ["B","L","U","E","W","H","A","L","E"],
+                    "duration": 30
+                },
+                "question9":{
+                    "question": "Which is the smallest continent?",
+                    "answer": ["A","U","S","T","R","A","L","I","A"],
+                    "duration": 30
+                },
+                "question10":{
+                    "question": "Which is the fastest animal on the land?",
+                    "answer": ["C","H","E","E","T","A","H"],
+                    "duration": 30
+                }
+            }
+        ]
+    }
+}

@@ -92,6 +92,12 @@ body {
 .nxtQuesModal,
 .feedbackModal {}
 
+.wishes {
+    display: none;
+    text-align: center;
+    padding: 5em 0em;
+}
+
 /* .ans_area {
     font-size: 50px;
 } */

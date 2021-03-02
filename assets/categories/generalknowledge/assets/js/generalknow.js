@@ -28,6 +28,8 @@ var storedTime = [];
 var crtcount = 0;
 var wrgcount = 5;
 
+var timeout;
+
 function init() {
     'use strict';
     $('img').on('dragstart', function (event) { event.preventDefault(); });
@@ -104,12 +106,6 @@ function loadQuestion(no) {
 
     // to show the attempts
     $('#lives').html('0' + wrgcount);
-    if ($('#score') > 9) {
-        $('#score').html(score);
-    } else {
-        $('#score').html('0' + score);
-    }
-
 
     // loading the question from JSON
 
@@ -210,16 +206,24 @@ function loadQuestion(no) {
             $('#lives').html('0' + wrgcount);
         }
         if (crtcount == tempArry.length) {
-            // for (var i = 0; i < answer.length; i++) {
-            //     $('#text_' + i).remove();
-            // }
+            score++;
             currQuesNo++;
-            feedbackFun();
-            // storedTime.push(duration_cal - duration);
-            // clearInterval(interval);
-            // console.log(storedTime);
-            // $('.nxtQuesModal').css('display', 'block');
-            // $('.options').css({ 'pointer-events': 'none', 'cursor': 'default' });
+            if (currQuesNo > total_question) {
+                clearInterval(interval);
+                timeout = setInterval(function () {
+                    $('.container').css('display', 'none')
+                    $('.wishes').css('display', 'block');
+                    $('.wishTitle').html('CONGRAGULATIONS');
+                    clearInterval(timeout);
+                }, 1000);
+            } else {
+                if ($('#score') > 9) {
+                    $('#score').html(score);
+                } else {
+                    $('#score').html('0' + score);
+                }
+                feedbackFun();
+            }
         } else if (wrgcount == 0) {
             feedbackFun();
         }
@@ -254,7 +258,6 @@ function feedbackFun() {
 }
 
 $('#next').click(function () {
-    score++;
     for (var bgclr = 0; bgclr < answer.length; bgclr++) {
         $("#txt_" + bgclr).removeClass("crt_select");
         $('#text_' + bgclr).remove();
@@ -265,7 +268,7 @@ $('#next').click(function () {
     loadQuestion(currQuesNo);
 });
 
-$('#home').click(function () {
+$('#home,#backhome').click(function () {
     window.location.href = ('../../landPage/intro.html');
 });
 
@@ -278,14 +281,25 @@ $('#wrongnext').click(function () {
     } else {
         currQuesNo++;
         crtcount = 0;
-        for (var bgclr = 0; bgclr < answer.length; bgclr++) {
-            $("#txt_" + bgclr).removeClass("crt_select");
-            $('#text_' + bgclr).remove();
+        if (currQuesNo > total_question) {
+            clearInterval(interval);
+            $('.feedbackModal').css('display', 'none');
+            timeout = setInterval(function () {
+                $('.container').css('display', 'none');
+                $('.wishes').css('display', 'block');
+                $('.wishTitle').html('CONGRAGULATIONS');
+                clearInterval(timeout);
+            }, 1000);
+        } else {
+            for (var bgclr = 0; bgclr < answer.length; bgclr++) {
+                $("#txt_" + bgclr).removeClass("crt_select");
+                $('#text_' + bgclr).remove();
+            }
+            $('.modalMsg').remove();
+            $('.feedbackModal').css('display', 'none');
+            $('.container').css('opacity', '1');
+            loadQuestion(currQuesNo);
         }
-        $('.modalMsg').remove();
-        $('.feedbackModal').css('display', 'none');
-        $('.container').css('opacity', '1');
-        loadQuestion(currQuesNo);
     }
 });
 
